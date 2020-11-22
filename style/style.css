@@ -1,0 +1,223 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(27, 25, 25);
+    margin: 0%;
+    width: 100%;
+}
+nav *{
+    display: block;
+    text-decoration: none;
+    color: rgb(177, 176, 176);
+}
+nav{
+    background-color: #302f2f;
+    margin: 0%;
+    justify-content: space-between;
+    padding:2vh 10%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    left: 0%;
+}
+.navbar-brand, .nav-toggler{
+    display: inline-block;
+    color: rgb(177, 176, 176);
+    background-color: transparent;
+    font-size: 15pt;
+}
+.navbar-brand{
+    font-size: 20pt;
+    font-weight: bold;
+}
+.nav-toggler{
+    position: absolute;
+    top: 1.5vh;
+    right: 10%;
+}
+.nav-list{
+    display: none;
+}
+.nav-list li a:hover{
+    color: #f5eeee;
+}
+.displayNav{
+    display: block;
+}
+.jumbo{
+    padding:10%;
+    box-shadow: -4px -4px 10px #2b2727, 4px 4px 10px #000000;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    color: rgb(177, 176, 176);
+    font-size: 5pt;
+}
+.jumbo>div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+.jumbo div div{
+    align-self: center;
+    width: auto;
+}
+.jumbo div div img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.name{
+    color: #217af0;
+    font-size: 15pt;
+    font-weight: 600;
+}
+.contactBtn{
+    display: block;
+    border:solid 5px #217af0;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: rgb(177, 176, 176);
+}
+.socialIcons{
+    list-style-type: none;
+    padding: 0%;
+}
+.socialIcons li{
+    display: inline-block;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: rgb(27, 25, 25);
+    box-shadow: -2.5px -2.5px 7px #2b2727, 2.5px 2.5px 7px #000000;
+}
+.socialIcons li a{
+    text-decoration: none;
+    color: rgb(177, 176, 176);   
+    font-size: 10pt;
+}
+.whiteSection{
+    background-color: rgb(221, 221, 221);
+    height: 70vh;
+}
+.sectionHeader{
+    text-align: center;
+    padding: 20px;
+}
+.txtWhite{
+    color: rgb(177, 176, 176);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+form{
+    width: 70%;
+    box-shadow: -4px -4px 10px #fffcfc, 4px 4px 10px #000000;
+    margin: auto;
+    padding: 5%;
+}
+form *{
+    display: block;
+    width: 70%;
+    margin:auto;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.messageBtn{
+    width: auto;
+    color: #217af0;
+    font-size: 20px;
+}
+.auto{
+    height: auto;
+}
+.or{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.or *{
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    align-self: center;
+    color: #217af0;
+    font-weight: bold;
+    text-align: center;
+}
+.or hr{
+    width: 35%;
+}
+.second{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 0%;
+}
+.second li{
+    text-align: center;
+    box-shadow: -2.5px -2.5px 2px #eee8e8, 2.5px 2.5px 2px #313030;
+}
+footer{
+    color: rgb(177, 176, 176);
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.listNone{
+    list-style-type: none;
+    padding: 0%;
+}
+section{
+    padding: 5%;
+}
+@media screen and (min-width:640px){
+    .jumbo{
+        padding:100px;
+        box-shadow: -4px -4px 10px #2b2727, 4px 4px 10px #000000;
+        width: 70%;
+        border-radius: 5px;
+        margin: auto;
+        color: rgb(177, 176, 176);
+        font-size: 20px;
+    }
+    .jumbo>div{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .flex{
+        flex-direction: row;
+    }
+    .nav-toggler{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .nav-list{
+        display:block;
+        align-self: center;
+    }
+    .navbar-brand{
+        display: block;
+        align-self: center;
+    }
+    .nav-list li{
+        display: inline-block;
+    }
+    .nav-list li a{
+        padding: 5pt;
+        text-align: center;
+        transition: ease-in-out 1s;
+    }
+
+}
